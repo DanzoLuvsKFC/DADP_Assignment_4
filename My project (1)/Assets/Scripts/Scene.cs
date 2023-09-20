@@ -9,4 +9,10 @@ public class Scene : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void StartScene()
+    {
+        SceneManager.LoadScene("SimplePoly City - Low Poly Assets_Demo Scene");
+    }
+    
 }
