@@ -43,6 +43,7 @@ public class MugController : MonoBehaviour
         if (CanMug && Input.GetKeyDown(KeyCode.Space))
         {
             Mug();
+            Mugged = true;
         }
     }
 
@@ -59,7 +60,7 @@ public class MugController : MonoBehaviour
         TargetAnim.SetBool("IsAttacked", true);
         PlayerAnim.SetBool("IsWalking", false);
         TargetRb.isKinematic = true; 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(3f);
         TargetAnim.SetBool("IsAttacked", false);
         TargetRb.velocity = new Vector3(0, 0, 0);
         Mugged = true;

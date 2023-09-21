@@ -48,7 +48,7 @@ public class EnemyController : MonoBehaviour
                 {
                     if (Hit.transform.gameObject.name == "Player" && PlayerAnimator.GetBool("IsWalking") == true)
                     {
-                        progressBar.progressValue += 0.05f;
+                        progressBar.progressValue += 0.15f;
                     }
                 }
             }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public TextMeshProUGUI TimeTxt;
+    public Text TimeTxt;
     public float Interval = 0f;
     public int Seconds = 30;
     public EnemyController enemyController;
